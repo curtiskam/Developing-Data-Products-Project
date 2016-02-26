@@ -1,0 +1,17 @@
+{
+    "contents" : "\n# This is the ui logic for a Shiny web application.\n# This app asks the user to pick a year between 1949 and 1960\n# then plots the number of airline passengers for that tear\n# by month\n\nlibrary(shiny)\n\nshinyUI(\n    pageWithSidebar(\n        # Application title\n        headerPanel(\"Airline Passengers per Month\"),\n        sidebarPanel(\n            numericInput('Year', 'Enter Year', value=1949, min = 1949, max = 1960, step = 1),\n            submitButton('Submit')\n        ),\n        mainPanel(\n           plotOutput('MonthlyPassengers')\n        )\n    )\n)\n",
+    "created" : 1456454202465.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "1703461007",
+    "id" : "6ADB4036",
+    "lastKnownWriteTime" : 1456530692,
+    "path" : "~/github/Developing-Data-Products-Project/ui.R",
+    "project_path" : "ui.R",
+    "properties" : {
+    },
+    "relative_order" : 1,
+    "source_on_save" : false,
+    "type" : "r_source"
+}
