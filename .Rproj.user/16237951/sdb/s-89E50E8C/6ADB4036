@@ -1,0 +1,17 @@
+{
+    "contents" : "\n# This is the ui logic for a Shiny web application.\n# You can find out more about building applications with Shiny here:\n# \n# http://www.rstudio.com/shiny/\n#\n\nlibrary(shiny)\n\nshinyUI(\n    pageWithSidebar(\n        # Application title\n        headerPanel(\"Airline Passengers per Month\"),\n        sidebarPanel(\n            numericInput('Year', 'Enter Year', value=1949, min = 1949, max = 1960, step = 1),\n            submitButton('Submit')\n        ),\n        mainPanel(\n           plotOutput('MonthlyPassengers')\n        )\n    )\n)\n",
+    "created" : 1456454202465.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "3694853266",
+    "id" : "6ADB4036",
+    "lastKnownWriteTime" : 1456527307,
+    "path" : "~/RProgramming/Prediction/ui.R",
+    "project_path" : "ui.R",
+    "properties" : {
+    },
+    "relative_order" : 1,
+    "source_on_save" : false,
+    "type" : "r_source"
+}
