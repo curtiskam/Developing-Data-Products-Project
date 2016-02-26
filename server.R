@@ -1,9 +1,8 @@
 
 # This is the server logic for a Shiny web application.
-# You can find out more about building applications with Shiny here:
-# 
-# http://www.rstudio.com/shiny/
-#
+# This app asks the user to pick a year between 1949 and 1960
+# then plots the number of airline passengers for that tear
+# by month
 
 library(forecast)
 data(AirPassengers)
