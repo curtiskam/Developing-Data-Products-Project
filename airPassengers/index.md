@@ -26,7 +26,7 @@ knit        : slidify::knit2slides
 * The student to create an application in Slidify that accepted an input, and then performed some function based on that input
 * The student to create a slidify presentation describing that product
 
----
+--- .class #id
 
 ## Air Passengers
 ### This app uses the airPassengers dataset
