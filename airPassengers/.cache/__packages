@@ -1,0 +1,10 @@
+base
+RevoUtilsMath
+devtools
+slidify
+knitr
+shiny
+zoo
+timeDate
+forecast
+rsconnect

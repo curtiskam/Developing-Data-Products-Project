@@ -1,0 +1,17 @@
+{
+    "contents" : "\n# This is the server logic for a Shiny web application.\n# This app asks the user to pick a year between 1949 and 1960\n# then plots the number of airline passengers for that tear\n# by month\n\nlibrary(forecast)\ndata(AirPassengers)\n\nshinyServer(\n    function(input, output) {\n        output$MonthlyPassengers <- renderPlot({seasonplot(window(AirPassengers,start=c(input$Year,1),\n        end=c(input$Year,12)), ylab=\"Passengers in Thousands\", main=\"Passengers for Year\")})\n    }\n)",
+    "created" : 1456454202630.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "1266283842",
+    "id" : "A3E54A0B",
+    "lastKnownWriteTime" : 1456532362,
+    "path" : "~/github/Developing-Data-Products-Project/server.R",
+    "project_path" : "server.R",
+    "properties" : {
+    },
+    "relative_order" : 2,
+    "source_on_save" : false,
+    "type" : "r_source"
+}

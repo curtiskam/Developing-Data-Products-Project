@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>AirPassengers</title>
+  <meta charset="utf-8">
+  <meta name="description" content="AirPassengers">
+  <meta name="author" content="Curtis Kaminski">
+  <meta name="generator" content="slidify" />
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta http-equiv="X-UA-Compatible" content="chrome=1">
+  <link rel="stylesheet" href="libraries/frameworks/io2012/css/default.css" media="all" >
+  <link rel="stylesheet" href="libraries/frameworks/io2012/css/phone.css" 
+    media="only screen and (max-device-width: 480px)" >
+  <link rel="stylesheet" href="libraries/frameworks/io2012/css/slidify.css" >
+  <link rel="stylesheet" href="libraries/highlighters/highlight.js/css/tomorrow.css" />
+  <base target="_blank"> <!-- This amazingness opens all links in a new tab. -->  <link rel=stylesheet href="./assets/css/ribbons.css"></link>
+
+  
+  <!-- Grab CDN jQuery, fall back to local if offline -->
+  <script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.7.min.js"></script>
+  <script>window.jQuery || document.write('<script src="libraries/widgets/quiz/js/jquery.js"><\/script>')</script> 
+  <script data-main="libraries/frameworks/io2012/js/slides" 
+    src="libraries/frameworks/io2012/js/require-1.0.8.min.js">
+  </script>
+  
+  
+
+</head>
+<body style="opacity: 0">
+  <slides class="layout-widescreen">
+    
+    <!-- LOGO SLIDE -->
+        <slide class="title-slide segue nobackground">
+  <hgroup class="auto-fadein">
+    <h1>AirPassengers</h1>
+    <h2>Shiny Project for Developing Data Projects</h2>
+    <p>Curtis Kaminski<br/>Data Science Specialization</p>
+  </hgroup>
+  <article></article>  
+</slide>
+    
+
+    <!-- SLIDES -->
+    <slide class="" id="slide-1" style="background:;">
+  <hgroup>
+    <h2>Developing Data Projects Course Project</h2>
+  </hgroup>
+  <article data-timings="">
+    <h3>Air Passengers</h3>
+
+<h3>Curtis Kaminski</h3>
+
+<h3>February 26, 2016</h3>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-2" style="background:;">
+  <hgroup>
+    <h2>Air Passengers</h2>
+  </hgroup>
+  <article data-timings="">
+    <h3>This presentation was created as part of the course project for the Coursera Developing Data Projects course. The assigning required:</h3>
+
+<ul>
+<li>The student to create an application in Slidify that accepted an input, and then performed some function based on that input</li>
+<li>The student to create a slidify presentation describing that product</li>
+</ul>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-3" style="background:;">
+  <hgroup>
+    <h2>Air Passengers</h2>
+  </hgroup>
+  <article data-timings="">
+    <h3>This app uses the airPassengers dataset</h3>
+
+<h3>This app required the Forecast package</h3>
+
+<h3>This app also required the forecast and shiny libraries</h3>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-4" style="background:;">
+  <hgroup>
+    <h2>Air Passengers</h2>
+  </hgroup>
+  <article data-timings="">
+    <h3>This app asks you to select a year between 1949 and 1960</h3>
+
+<h3>The app will then display a plot of the number of airline passengers for each month that year.</h3>
+
+<h3>The App can be found at <a href="https://curtiskam.shinyapps.io/Developing-Data-Products-Project/">https://curtiskam.shinyapps.io/Developing-Data-Products-Project/</a></h3>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-5" style="background:;">
+  <hgroup>
+    <h2>Sample Output</h2>
+  </hgroup>
+  <article data-timings="">
+    <pre><code class="r">library(forecast)
+data(AirPassengers)
+par(pin=c(3,3))
+seasonplot(window(AirPassengers,start=c(1953,1),
+        end=c(1953,12)), ylab=&quot;Passengers in Thousands&quot;, main=&quot;Passengers for Year&quot;)
+</code></pre>
+
+<p><img src="assets/fig/samplePlot-1.png" alt="plot of chunk samplePlot"> </p>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+    <slide class="backdrop"></slide>
+  </slides>
+  <div class="pagination pagination-small" id='io2012-ptoc' style="display:none;">
+    <ul>
+      <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=1 title='Developing Data Projects Course Project'>
+         1
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=2 title='Air Passengers'>
+         2
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=3 title='Air Passengers'>
+         3
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=4 title='Air Passengers'>
+         4
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=5 title='Sample Output'>
+         5
+      </a>
+    </li>
+  </ul>
+  </div>  <!--[if IE]>
+    <script 
+      src="http://ajax.googleapis.com/ajax/libs/chrome-frame/1/CFInstall.min.js">  
+    </script>
+    <script>CFInstall.check({mode: 'overlay'});</script>
+  <![endif]-->
+</body>
+  <!-- Load Javascripts for Widgets -->
+  
+  <!-- LOAD HIGHLIGHTER JS FILES -->
+  <script src="libraries/highlighters/highlight.js/highlight.pack.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+  <!-- DONE LOADING HIGHLIGHTER JS FILES -->
+   
+  </html>

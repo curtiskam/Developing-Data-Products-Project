@@ -9,7 +9,7 @@ library(shiny)
 shinyUI(
     pageWithSidebar(
         # Application title
-        headerPanel("Airline Passengers per Month"),
+        headerPanel("Airline Passengers for Year"),
         sidebarPanel(
             numericInput('Year', 'Enter Year', value=1949, min = 1949, max = 1960, step = 1),
             submitButton('Submit')
