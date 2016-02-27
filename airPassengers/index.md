@@ -9,14 +9,6 @@ hitheme     : tomorrow      #
 widgets     : []            # {mathjax, quiz, bootstrap}
 mode        : selfcontained # {standalone, draft}
 knit        : slidify::knit2slides
----
-
-## Developing Data Projects Course Project
-### Air Passengers
-### Curtis Kaminski
-### February 26, 2016
-
-
 
 --- 
 
@@ -26,7 +18,7 @@ knit        : slidify::knit2slides
 * The student to create an application in Slidify that accepted an input, and then performed some function based on that input
 * The student to create a slidify presentation describing that product
 
---- .class #id
+--- 
 
 ## Air Passengers
 ### This app uses the airPassengers dataset
